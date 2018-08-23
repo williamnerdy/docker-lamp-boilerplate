@@ -56,6 +56,8 @@ RUN echo '\
 
 RUN ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/000-default-ssl.conf
 
+COPY development.ini /usr/local/etc/php/php.ini
+
 COPY app /var/www/app
 
 RUN service apache2 restart
