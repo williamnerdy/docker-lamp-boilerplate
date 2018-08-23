@@ -28,8 +28,8 @@ Dados de acesso do phpmyadmin:
 
 ````json
 {
-  host: mysql,
-  user: root,
-  password: my-secret-pw
+  "host": "mysql",
+  "user": "root",
+  "password": "my-secret-pw"
 }
 ````
