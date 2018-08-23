@@ -3,7 +3,7 @@ services:
   app:
     build: .
     ports:
-      - "8080:80"
+      - "80:80"
       - "4043:443"
     volumes:
       - $PWD:/app

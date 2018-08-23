@@ -2,6 +2,8 @@ FROM php:7.2-apache
 
 EXPOSE 80 443
 
+WORKDIR /var/www/app
+
 RUN apt-get update && \
     apt-get install -y zlib1g-dev openssl
 
