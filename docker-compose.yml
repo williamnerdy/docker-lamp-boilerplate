@@ -7,6 +7,7 @@ services:
       - "4043:443"
     volumes:
       - $PWD:/app
+      - ./development.ini:/usr/local/etc/php/php.ini
     links:
       - mysql
       - phpmyadmin
